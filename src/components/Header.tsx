@@ -28,7 +28,7 @@ const Header = () => {
                 Kilua Homes
               </span>
               <span className="text-xs tracking-[0.3em] text-muted-foreground uppercase">
-                Real Estate
+                By Sunway LTD
               </span>
             </div>
           </a>
@@ -37,6 +37,9 @@ const Header = () => {
           <div className="hidden md:flex items-center gap-8">
             <a href="#property" className="text-foreground hover:text-primary transition-colors font-medium">
               Property
+            </a>
+            <a href="#plots" className="text-foreground hover:text-primary transition-colors font-medium">
+              Plots
             </a>
             <a href="#features" className="text-foreground hover:text-primary transition-colors font-medium">
               Features
@@ -70,6 +73,9 @@ const Header = () => {
             <div className="flex flex-col gap-4">
               <a href="#property" className="text-foreground hover:text-primary transition-colors font-medium py-2">
                 Property
+              </a>
+              <a href="#plots" className="text-foreground hover:text-primary transition-colors font-medium py-2">
+                Plots
               </a>
               <a href="#features" className="text-foreground hover:text-primary transition-colors font-medium py-2">
                 Features
