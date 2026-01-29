@@ -10,7 +10,7 @@ const Footer = () => {
             <div className="mb-4">
               <span className="text-2xl font-display font-bold">Kilua Homes</span>
               <span className="block text-xs tracking-[0.3em] text-primary-foreground/70 uppercase mt-1">
-                Real Estate
+                By Sunway LTD
               </span>
             </div>
             <p className="text-primary-foreground/80 max-w-md mb-6">
@@ -25,6 +25,11 @@ const Footer = () => {
               <li>
                 <a href="#property" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
                   Property Overview
+                </a>
+              </li>
+              <li>
+                <a href="#plots" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                  Plots for Sale
                 </a>
               </li>
               <li>
@@ -76,7 +81,7 @@ const Footer = () => {
 
         {/* Bottom bar */}
         <div className="pt-8 border-t border-primary-foreground/20 text-center text-primary-foreground/60 text-sm">
-          <p>© {new Date().getFullYear()} Kilua Homes Real Estate. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Kilua Homes By Sunway LTD. All rights reserved.</p>
         </div>
       </div>
     </footer>
