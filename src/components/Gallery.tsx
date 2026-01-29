@@ -34,7 +34,6 @@ const images = [
   { src: siteView3, alt: "Land preparation", label: "Land Preparation" },
   { src: siteView4, alt: "Site clearing", label: "Site Clearing" },
   { src: siteView5, alt: "Building foundation", label: "Foundation" },
-  { src: locationMap1, alt: "Location near Mombasa Highway", label: "Location Map" },
   { src: locationMap2, alt: "Highway access", label: "Highway Access" },
 ];
 
