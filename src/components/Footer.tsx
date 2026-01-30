@@ -9,9 +9,6 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <div className="mb-4">
               <span className="text-2xl font-display font-bold">Kilua Homes</span>
-              <span className="block text-xs tracking-[0.3em] text-primary-foreground/70 uppercase mt-1">
-                By Sunway LTD
-              </span>
             </div>
             <p className="text-primary-foreground/80 max-w-md mb-6">
               Building quality homes for modern coastal living. Experience timeless design, premium finishes, and the freedom of freehold ownership in Kenya's most beautiful coastal locations.
@@ -81,7 +78,7 @@ const Footer = () => {
 
         {/* Bottom bar */}
         <div className="pt-8 border-t border-primary-foreground/20 text-center text-primary-foreground/60 text-sm">
-          <p>© {new Date().getFullYear()} Kilua Homes By Sunway LTD. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Kilua Homes. All rights reserved.</p>
         </div>
       </div>
     </footer>
