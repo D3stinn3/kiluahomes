@@ -1,4 +1,4 @@
-import { MapPin, Check, AlertCircle } from "lucide-react";
+import { MapPin, Check, AlertCircle, Building2, Palmtree, Car, Dumbbell, GraduationCap, Train, Home } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const plots = [
@@ -29,6 +29,25 @@ const keyDevelopments = [
   "Ocean Breeze Court",
   "Tarmac Road linking Marijani through Vipingo Beach boundary to Ronald Ngala Utalii University",
   "Tarmac road links Marijani entry to the Mombasa Malindi Highway",
+];
+
+const upcomingDevelopments = [
+  "Centum Developments",
+  "Free Economic Zone",
+  "Marijani Club House with Gym & Spa Facilities",
+  "Vipingo City",
+  "Phase II Lamu-Malindi-Isiolo SGR",
+  "Ronald Ngala Utalii College",
+  "Mombasa – Malindi Dual Carriage",
+];
+
+const amenities = [
+  { icon: Car, name: "Ample Parking" },
+  { icon: MapPin, name: "Good Roads" },
+  { icon: Palmtree, name: "Walking Tracks" },
+  { icon: Home, name: "Common Area Park" },
+  { icon: Palmtree, name: "Child's Play Area" },
+  { icon: Palmtree, name: "Swimming Pool" },
 ];
 
 const PlotsForSale = () => {
@@ -96,6 +115,21 @@ const PlotsForSale = () => {
           ))}
         </div>
 
+        {/* Beach & Location Highlight */}
+        <div className="bg-gradient-hero rounded-2xl p-6 md:p-8 shadow-soft max-w-4xl mx-auto text-center mb-12">
+          <div className="inline-flex items-center justify-center w-12 h-12 bg-primary-foreground/20 rounded-full mb-4">
+            <Palmtree className="w-6 h-6 text-primary-foreground" />
+          </div>
+          <h3 className="text-xl font-display font-semibold text-primary-foreground mb-2">
+            Pristine Beach Living
+          </h3>
+          <p className="text-primary-foreground/90 max-w-2xl mx-auto">
+            Experience the breathtaking beauty of Vipingo's pristine white sandy beaches and crystal-clear turquoise waters. 
+            Our development is located on the <strong>second row from the main road</strong>, offering easy access while maintaining 
+            a peaceful coastal retreat atmosphere. The stunning Indian Ocean coastline is just moments away.
+          </p>
+        </div>
+
         {/* Gated community note */}
         <div className="bg-card rounded-2xl p-6 md:p-8 shadow-soft max-w-4xl mx-auto text-center mb-12">
           <div className="inline-flex items-center justify-center w-12 h-12 bg-ocean/10 rounded-full mb-4">
@@ -110,8 +144,25 @@ const PlotsForSale = () => {
           </p>
         </div>
 
+        {/* Amenities */}
+        <div className="bg-card rounded-2xl p-6 md:p-8 shadow-soft max-w-4xl mx-auto mb-12">
+          <h3 className="text-xl font-display font-semibold text-foreground mb-6 text-center">
+            Community Amenities
+          </h3>
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+            {amenities.map((amenity, index) => (
+              <div key={index} className="flex items-center gap-3 bg-secondary/50 rounded-xl p-4">
+                <div className="flex-shrink-0 w-10 h-10 bg-ocean/10 rounded-full flex items-center justify-center">
+                  <amenity.icon className="w-5 h-5 text-ocean" />
+                </div>
+                <span className="text-foreground font-medium">{amenity.name}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
         {/* Key Developments */}
-        <div className="bg-card rounded-2xl p-6 md:p-8 shadow-soft max-w-4xl mx-auto">
+        <div className="bg-card rounded-2xl p-6 md:p-8 shadow-soft max-w-4xl mx-auto mb-12">
           <h3 className="text-xl font-display font-semibold text-foreground mb-6 text-center">
             Key Developments Nearby
           </h3>
@@ -125,6 +176,61 @@ const PlotsForSale = () => {
               </div>
             ))}
           </div>
+        </div>
+
+        {/* Upcoming Developments */}
+        <div className="bg-card rounded-2xl p-6 md:p-8 shadow-soft max-w-4xl mx-auto mb-12">
+          <div className="flex items-center justify-center gap-2 mb-6">
+            <Building2 className="w-6 h-6 text-primary" />
+            <h3 className="text-xl font-display font-semibold text-foreground text-center">
+              Upcoming Developments
+            </h3>
+          </div>
+          <div className="grid sm:grid-cols-2 gap-4 mb-8">
+            {upcomingDevelopments.map((development, index) => (
+              <div key={index} className="flex items-start gap-3">
+                <div className="flex-shrink-0 w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center mt-0.5">
+                  <Check className="w-4 h-4 text-primary" />
+                </div>
+                <span className="text-foreground">{development}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Vipingo Special Economic Zone */}
+        <div className="bg-secondary rounded-2xl p-6 md:p-8 shadow-soft max-w-4xl mx-auto mb-12">
+          <div className="flex items-center justify-center gap-2 mb-4">
+            <Building2 className="w-6 h-6 text-primary" />
+            <h3 className="text-xl font-display font-semibold text-foreground text-center">
+              Vipingo Special Economic Zone (VSEZ)
+            </h3>
+          </div>
+          <p className="text-muted-foreground text-center mb-6">
+            A 2,000-acre, "plug-and-play" industrial park in Kilifi County, Kenya, designed as a sustainable hub 
+            for manufacturing, agro-processing, and logistics. Developed by Centum Investment and Arise IIP, 
+            it aims to attract <strong>Sh390 billion ($3 billion)</strong> in investments, create <strong>35,000+ jobs</strong>, 
+            and leverage proximity to the Port of Mombasa.
+          </p>
+          <p className="text-muted-foreground text-center">
+            The zone features industrial parks, extensive residential options, modern infrastructure including 
+            a desalination plant and power facilities, plus lifestyle amenities like schools, medical centers, and a golf course.
+          </p>
+        </div>
+
+        {/* Vipingo Ridge PGA */}
+        <div className="bg-card rounded-2xl p-6 md:p-8 shadow-soft max-w-4xl mx-auto">
+          <div className="flex items-center justify-center gap-2 mb-4">
+            <Palmtree className="w-6 h-6 text-ocean" />
+            <h3 className="text-xl font-display font-semibold text-foreground text-center">
+              Vipingo Ridge - PGA Baobab Course
+            </h3>
+          </div>
+          <p className="text-muted-foreground text-center">
+            Vipingo Ridge features the PGA Baobab Course, which is a <strong>PGA-accredited championship golf course</strong>. 
+            It is recognized as the <strong>only PGA-accredited golf course in Africa</strong> and serves as a host venue 
+            for the European Tour's Magical Kenya Ladies Open.
+          </p>
         </div>
       </div>
     </section>
