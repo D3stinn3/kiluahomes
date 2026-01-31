@@ -58,11 +58,14 @@ const PlotsForSale = () => {
             <span className="text-sm font-medium">Very Limited Plots Available</span>
           </div>
           
-          <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
+          <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-2">
             Premium Plots for Sale
           </h2>
+          <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-3 py-1 rounded-full mb-4">
+            <span className="text-sm font-semibold">Phase 1 Now Available</span>
+          </div>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Secure your piece of paradise in our exclusive gated community. Freehold ownership with full title deeds.
+            Secure your piece of paradise in our exclusive gated community. Freehold ownership with full title deeds. More phases coming soon.
           </p>
         </div>
 
