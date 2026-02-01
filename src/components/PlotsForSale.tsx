@@ -5,19 +5,19 @@ const plots = [
   {
     size: "100 x 100",
     area: "10,000 sq.ft",
-    price: "KSH 7M",
+    price: "KSH 6M",
     features: ["Freehold Title Deed", "Up to 18 Months Payment Plan", "Gated Community Access"],
   },
   {
     size: "50 x 100",
     area: "5,000 sq.ft",
-    price: "KSH 4.5M",
+    price: "KSH 3M",
     features: ["Freehold Title Deed", "Up to 18 Months Payment Plan", "Gated Community Access"],
   },
   {
     size: "40 x 80",
     area: "3,200 sq.ft",
-    price: "KSH 3M",
+    price: "KSH 2M",
     features: ["Freehold Title Deed", "Up to 18 Months Payment Plan", "Gated Community Access"],
   },
 ];

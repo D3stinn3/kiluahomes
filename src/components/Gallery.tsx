@@ -7,6 +7,10 @@ import propertyBack from "@/assets/property-back.jpg";
 import propertyRow from "@/assets/property-row.png";
 import propertySingle from "@/assets/property-single.png";
 import propertyGate from "@/assets/property-gate.png";
+import vipingoBeachMap from "@/assets/vipingo-beach-map.png";
+import mainHighwayMap from "@/assets/main-highway-map.png";
+import siteConstructionView from "@/assets/site-construction-view.jpg";
+import siteGreeneryView from "@/assets/site-greenery-view.jpg";
 
 const images = [
   { src: propertyPool, alt: "Property with pool view", label: "Pool View" },
@@ -16,6 +20,10 @@ const images = [
   { src: propertyRow, alt: "Row of townhouses", label: "Townhouse Row" },
   { src: propertySingle, alt: "Single unit view", label: "Single Unit" },
   { src: propertyGate, alt: "Property entrance gate", label: "Entrance Gate" },
+  { src: vipingoBeachMap, alt: "Vipingo Beach location map", label: "Vipingo Beach Area" },
+  { src: mainHighwayMap, alt: "Location near main highway", label: "Highway Access" },
+  { src: siteConstructionView, alt: "Site construction progress", label: "Construction Progress" },
+  { src: siteGreeneryView, alt: "Lush site greenery", label: "Natural Surroundings" },
 ];
 
 const Gallery = () => {
